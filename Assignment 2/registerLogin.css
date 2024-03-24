@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* registerWithEmail */
+.RWE{
+    font-family: HelveticaNeueLTPro-Roman;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin: auto;
+    
+    background-image: url("images/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+hr {
+    background-color: #bebebe;
+    height: 2px; 
+    border: 0; 
+}
+header {
+    background: linear-gradient(0deg, rgb(6, 88, 82) 0%, rgb(8, 156, 156) 100%);
+    padding: 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1{
+    margin-left: 10px;
+}
+ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+ul li {
+    margin: 20px;
+}
+.skip{
+    font-size: x-large;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: large;
+    border: 2px solid #000;
+    padding: 1px 10px;
+    border-radius: 10%;
+}
+article {
+    border: 15px solid #083165;
+}
+.formpage {
+    font-size: x-large;
+    max-width: 350px;
+    margin: auto;
+}
+.formpage p{
+    margin: 20px;
+}
+@media screen and (max-width:610px){
+    ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+    }
+    ul li {
+        display: flex;
+        /* margin: 20px; */
+    }
+    ul li a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: x-large;
+    }
+    .formpage {
+        font-size: xx-large;
+        max-width: 60%;
+        margin: auto;
+    }
+    /* .formpage p{
+        margin: 20px;
+    } */
+    .line{
+        width: 50%;
+        text-align: center;
+        margin: 10px auto;
+    }
+    .lg-sz{
+        width: 500px;
+        /* margin: 0 7%; */
+    }
+    .txt{
+        content-visibility: hidden;
+    }
+    .gtl{
+        font-size: large;
+    }
+}
+@media screen and (max-width:450px){
+    .loginWith p{
+        margin: 5px;
+    }
+}
+input[type="text"], input[type="number"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}   
+input[type="submit"] {
+    padding: 10px;
+    font-size: 100%;
+    border-radius: 10px;
+}
+.font1 a{
+    color: #089c9c;
+    text-decoration: underline;
+}
+.submit{
+    text-align: center;
+}
+.loginWith{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.LW{
+    margin: 0;
+    padding: 0;
+}
+.lg-sz{
+    width: 80%;
+}
+.line{
+    width: 150px;
+    text-align: center;
+    margin: 10px auto;
+}
+.font1 {
+    font-size: 20px;
+}
+.gtl{
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* footer */
+.copyright {
+    padding: 10px;
+}
+.copytoclip{
+    text-align: left;
+    margin: 5px;
+    font-size: 30px;
+}
+.copyright_reserved{
+    font-size: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.copyright_reserved a{
+    color: #fff;
+    text-decoration: none;
+}
+.smlink{
+    display: flex;
+}
+.smlink a{
+    color: #fff;
+    background-color: #5e5e5e;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+}
+.copytoclip a:hover, .copyright_reserved a:hover, .smlink a:hover, .gtl:hover{
+    color: #089c9c;
+}
+input:hover{
+    box-shadow: 1px 1px 8px 2px rgb(73, 73, 73);
+}
