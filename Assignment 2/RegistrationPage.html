@@ -47,8 +47,9 @@
             </p>
             <p>
                 Confirm Password: <br>
-                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" onkeyup="passMatch()" required>
             </p>
+            <p class="MsgOfPass"></p>
             <hr class="line">
             <div class="loginWith">
                 <p>
@@ -61,7 +62,6 @@
                     <a class="LW" href=""><img class="lg-sz" src="images/applelogo.png" alt="Google"></a>
                 </p>
             </div>
-            <p class="MsgOfPass"></p>
             <p class="font1">
                 <input type="checkbox" id="tc" name="termCondition" required> I have read and accept all the <a
                     href="https://drive.google.com/file/d/1Ic404NCtxFaGrkgXnH7Egs8RF8xONdug/view?usp=sharing" target="_main">Terms
@@ -97,11 +97,11 @@
             let cpass = document.getElementById('cpassword').value;
             if (pass != cpass) {
                 document.getElementById('MsgOfPass').style.color = 'red';
-                document.getElementById('MsgOfPass').innerHTML = 'Invalidate';
+                document.getElementById('MsgOfPass').innerHTML= 'Invalidate';
             }
             else {
                 document.getElementById('MsgOfPass').style.color = 'green';
-                document.getElementById('MsgOfPass').innerHTML = 'Matched';
+                document.getElementById('MsgOfPass').innerHTML= 'Matched';
             }
         }
         function redirect(url) {
