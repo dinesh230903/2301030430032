@@ -64,11 +64,7 @@ article {
         list-style: none;
         text-decoration: none;
         display: flex;
-        flex-direction: row;
-    }
-    ul li {
-        display: flex;
-        /* margin: 20px; */
+        flex-direction: column;
     }
     ul li a{
         text-decoration: none;
@@ -98,6 +94,14 @@ article {
     .gtl{
         font-size: large;
     }
+}
+@media screen and (min-width:610px){
+    .grid-column{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 1rem;
+    }
+
 }
 @media screen and (max-width:450px){
     .loginWith p{
@@ -153,6 +157,16 @@ input[type="submit"] {
 .copyright {
     padding: 10px;
 }
+.grid2{
+    margin: 0 auto 0 auto;
+}
+.grid3{
+    margin-left: auto;
+}
+.grid-row{
+    display: grid;
+    grid-template-rows: auto auto ;
+}
 .copytoclip{
     text-align: left;
     margin: 5px;
@@ -177,7 +191,7 @@ input[type="submit"] {
     padding: 10px;
     margin: 5px;
 }
-.copytoclip a:hover, .copyright_reserved a:hover, .smlink a:hover, .gtl:hover{
+.copytoclip a:hover, .copyright_reserved a:hover, .smlink a:hover, .gtl:hover, .grid2 div:hover, .grid1 h2:hover, .grid1 i:hover, .grid1 p:hover{
     color: #089c9c;
 }
 input:hover{

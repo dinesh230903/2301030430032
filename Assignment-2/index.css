@@ -3,12 +3,15 @@
     padding: 0;
 }
 body{
-    background:linear-gradient(#69a7e0,#2d07b4);
+    background-image: url("images/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
 .getstr{
+    color: #2932b9;
     box-shadow: 4px 4px #454545;
     bottom: 20px;
     right: 50px;
@@ -22,15 +25,6 @@ body{
 .getstr:hover{
     box-shadow: 6px 6px 5px #454545;
     background-color: #7e7e7e;
-}
-.getstr a{
-    text-decoration: none;
-    color: #2932b9;
-    
-}
-.bgimg{
-    width: 100%;
-    position: fixed;
 }
 header {
     background: linear-gradient( rgb(52, 79, 236) 0%, rgb(32, 43, 146) 100%);
@@ -53,6 +47,28 @@ ul li a{
     text-decoration: none;
     color: #ffffff;
     font-size: x-large;
+}
+@media screen and (max-width:450px){
+    ul {
+        list-style: none;
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+    }
+    ul li{
+        margin: 5px;
+    }
+    .getstr{
+        color: #2932b9;
+        box-shadow: 4px 4px #454545;
+        bottom: 50px;
+        /* position: fixed; */
+        font-size: 15px;
+        font-weight: 1000;
+        padding: 5px 30px;
+        border: 3px solid #2932b9;
+        border-radius: 5px;
+    }
 }
 
 /* Image infinite slider  */
